@@ -27,7 +27,6 @@
             .done(function (data) {
                 //on success(done), data contains a list of products
                 $.each(data, function (key, item) {
-                    alert(key);
                     $('<li>', { text: formatItem(item) }).appendTo($('#products'));
                 });
             });
